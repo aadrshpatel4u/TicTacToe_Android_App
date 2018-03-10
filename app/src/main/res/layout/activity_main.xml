@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.android.tictactoe.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="16dp"
+        android:text="Player 1"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/ring"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="32dp"
+        android:text="Player 2"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/multiply"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+    <ImageButton
+        android:id="@+id/ib11"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/original"
+        android:onClick="ib11clicked"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageButton
+        android:id="@+id/ib12"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/original"
+        android:onClick="ib12clicked"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/ib11"
+        app:layout_constraintTop_toTopOf="@+id/ib11" />
+
+    <ImageButton
+        android:id="@+id/ib13"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/original"
+        android:onClick="ib13clicked"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/ib12"
+        app:layout_constraintTop_toTopOf="@+id/ib12" />
+
+    <ImageButton
+        android:id="@+id/ib21"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/original"
+        android:onClick="ib21clicked"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="@+id/ib11"
+        app:layout_constraintTop_toBottomOf="@+id/ib11" />
+
+    <ImageButton
+        android:id="@+id/ib22"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/original"
+        android:onClick="ib22clicked"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/ib21"
+        app:layout_constraintTop_toBottomOf="@+id/ib12" />
+
+    <ImageButton
+        android:id="@+id/ib23"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/original"
+        android:onClick="ib23clicked"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/ib22"
+        app:layout_constraintTop_toBottomOf="@+id/ib13" />
+
+    <ImageButton
+        android:id="@+id/ib31"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/original"
+        android:onClick="ib31clicked"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="@+id/ib21"
+        app:layout_constraintTop_toBottomOf="@+id/ib21" />
+
+    <ImageButton
+        android:id="@+id/ib32"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/original"
+        android:onClick="ib32clicked"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/ib31"
+        app:layout_constraintTop_toBottomOf="@+id/ib22" />
+
+    <ImageButton
+        android:id="@+id/ib33"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/original"
+        android:onClick="ib33clicked"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/ib32"
+        app:layout_constraintTop_toBottomOf="@+id/ib23" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/white"
+        android:onClick="reset"
+        android:text="Reset"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/won_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/transparent"
+        android:hapticFeedbackEnabled="false"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ib32" />
+
+</android.support.constraint.ConstraintLayout>
